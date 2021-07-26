@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    ListView에서 하나의 항목을 커스텀 하기 위한 XML 레이아웃
+    전체적으로 가로형이고, 이미지와 출력할 항목으로 구성되어있음
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+    <!-- 배우 이미지 -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tv_name"
+            android:text="김규리"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tv_age"
+            android:text="10살"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/tv_hobbys"
+            android:text="버스,기차,비행기"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:id="@+id/tv_login"
+            android:text="로그인"
+            android:textSize="13sp" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
